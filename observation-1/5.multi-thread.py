@@ -2,11 +2,11 @@ import threading
 import time
 
 def worker1():
-    for i in range(5):
+    for i in range(3):
         print("\nWorker 1: Performing task %d" % i)
         time.sleep(1)
 def worker2():
-    for i in range(5):
+    for i in range(3):
         print("\nWorker 2: Performing task %d" % i)
         time.sleep(1)
 
