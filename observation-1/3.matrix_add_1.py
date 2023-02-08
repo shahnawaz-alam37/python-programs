@@ -15,7 +15,22 @@ def sum(A,B):
         for j in range(len(A[0])):
             row.append(A[i][j]+B[i][j])
         output.append(row)
+    print("addition of matrix")
     return output
+
+def multiply(A,B):
+    resmult = []
+    for i in range(len(A)):
+        list3=[]
+   # iterate through columns of Y
+        for j in range(len(B[i])):
+            sum1=0
+            for k in range(len(A[i])):
+                sum1 = sum1+A[i][k]*B[k][j]
+            list3.append(sum1)
+        resmult.append(list3)
+    print("multiplication")
+    return resmult
 
 print("matrix A:")
 M = int(input("enter the no of rows(M):"))
@@ -29,4 +44,8 @@ B = matrix_input(M,N)
 
 li = sum(A,B)
 for i in li:
-    print(f"\n{i}\n")
+    print(f"\n{i}")
+li = multiply(A,B)
+for i in li:
+    print(f"\n{i}")
+

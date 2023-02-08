@@ -6,7 +6,7 @@ if a > b:
     print("a > b")
 
 # if-else statement
-if a == 20:
+if a == b:
     print("a equals b")
 else:
     print("a != b")
